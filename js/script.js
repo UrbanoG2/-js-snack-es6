@@ -3,6 +3,23 @@
 // Usiamo i nuovi metodi degli array foreach o filter.
 
 
+const arrNumbers = [5, 61, 22, 34, 74, 15, 26];
+
+
+myFunction (arrNumbers, 1, 100);
+
 function myFunction (array, numA, numB) {
+    console.log(array, numA, numB);
+
+    numA = array.length - array.length;
+    numB = array.length;
+
+    console.log(numA, numB);
+
+    const included = array.filter(number => number > numA && number < numB);
+
+    console.log(included);
     
+    return included
 }
+
