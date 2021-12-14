@@ -3,17 +3,37 @@
 // Usiamo i nuovi metodi degli array foreach o filter.
 
 
+// const arrNumbers = [5, 61, 22, 34, 74, 15, 26];
+
+
+// function myFunction (array, numA, numB) {
+
+//     const included = array.filter(element => element > numA &&element < numB);
+
+//     console.log(included);
+
+//     return included
+// }
+
+// myFunction (arrNumbers, 25, 70);
+
+
 const arrNumbers = [5, 61, 22, 34, 74, 15, 26];
 
 
 function myFunction (array, numA, numB) {
 
-    const included = array.filter(element => element > numA &&element < numB);
+    let included = array.filter((element, index) => {
 
-    console.log(included);
+       return index > numA && index < numB;
+
+
+    });
+
 
     return included
 }
 
-myFunction (arrNumbers, 25, 70);
+ let result = myFunction (arrNumbers, 1, 4);
 
+ console.log(result);
