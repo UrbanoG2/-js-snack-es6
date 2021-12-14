@@ -6,16 +6,14 @@
 const arrNumbers = [5, 61, 22, 34, 74, 15, 26];
 
 
-myFunction (arrNumbers, 30, 70);
-
-
 function myFunction (array, numA, numB) {
-
-    let element = "";
 
     const included = array.filter(element => element > numA &&element < numB);
 
     console.log(included);
+
+    return included
 }
 
+myFunction (arrNumbers, 25, 70);
 
